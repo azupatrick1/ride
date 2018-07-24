@@ -112,6 +112,8 @@ form {
     padding: 40px;
     background:  url('../images/site_image.png')  no-repeat 0 -300px;
     background-size: cover;
+    position: relative;
+    right: 0.5em;  
      
 }
 
