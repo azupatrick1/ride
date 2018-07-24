@@ -1,0 +1,67 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        RideMyWay | Sign in
+    </title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>
+                <a href="index.html">RideMyWay</a>
+            </h1>
+        </nav>
+    </header>
+
+    <div class="get-user">
+        <div class="signin-box">
+            <div class="signin-heading">
+                <p>
+                    Sign in to enjoy Thousands of rides
+                </p>
+                <p>
+                    available every day
+                </p>
+            </div>
+            <br/>
+
+            <form action="#" method="POST">
+                <input type="email" class="signinEmail" name="signinEmail" placeholder="Email" onkeyup="validateEmailInput()" />
+                <div class='errorMessage'></div>
+                <br/>
+                <input type="password" class="signinPassword" name="signinPassword" placeholder="Password" onkeyup="validatePasswordInput()"
+                />
+                <div class='errorMessage2' on></div>
+                <br/>
+            </form>
+            <button class="signup" onclick="validateInput()">Sign In</button>
+
+            <div class="signin-properties">
+                <p>
+                    <a href="forgetpassword.html">Trouble signing in?</a>
+                </p>
+                <p> Dont have an account?
+                    <a href="signup.html">Sign up</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <strong>&copy; 2018 RideMyWay.</strong>
+    </footer>
+
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>

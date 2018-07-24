@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>
+        RideMyWay | Sign up
+    </title>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles//styles.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>
+                <a href="index.html">RideMyWay</a>
+                <div class="nav-items" onclick="showLocation('signin.html')">Sign in </div> 
+            </h1>
+        </nav>
+    </header>
+    <br/>
+    <br/>
+
+
+    <div class="get-user">
+        <div class="signin-box">
+            <div class="signin-heading">
+                <p>Sign up to offer or request for a ride</p>
+            </div>
+            <br/>
+            <br/>
+
+            <form action="#" method="POST">
+                <input type="text" class="signinInput" name="signupName" placeholder="Name" required/>
+                <div class='errorMessage'></div>
+                <br/>
+                <select name="signupGender">
+                    <option>
+                        Male
+                    </option>
+                    <option>
+                        Female
+                    </option>
+                </select>
+                <br/>
+                <br/>
+                <input type="text" class="signinInput" name="signupPhoneNumber" placeholder="Phone Number" required/>
+                <div class='errorMessage'></div>
+                <br/>
+                <input type="email" class="signinInput" name="signupEmail" placeholder="Email" required/>
+                <div class='errorMessage'></div>
+                <br/>
+                <input type="password" class="signinInput" name="signupPassword" placeholder="Password" required/>
+                <div class='errorMessage'></div>
+                <br/>
+                <br/>
+            </form>
+            <button class="signup" onclick="validateInput()">Sign Up</button>
+
+
+            <div class="signin-properties">
+                <p> Already have an account?
+                    <a href="signin.html">Sign in</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
