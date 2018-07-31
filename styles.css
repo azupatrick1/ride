@@ -524,7 +524,7 @@ td {
     }
 
     .get-user {
-        background: url('../images/site_image.png') no-repeat -250px 0px;
+        background: url('site_image.png') no-repeat -250px 0px;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -536,6 +536,7 @@ td {
     .hamburger {
         display: inline;
         position: sticky;
+        z-index: 1;
         left: 88%;
         padding: 0;
         background-color: purple;
