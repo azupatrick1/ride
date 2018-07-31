@@ -1,13 +1,11 @@
-
-
 * {
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
-    color: rgb(22, 12, 3);
-    opacity: 0.5;
+    color: rgb(45, 49, 45);
+    font-family: cursive;
 }
 
 a:hover {
@@ -25,8 +23,6 @@ a:hover {
     display: flex;
 }
 
-
-
 .available-ride-2 {
     background-color: transparent;
     padding: 30px;
@@ -36,7 +32,21 @@ a:hover {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: url('../images/site_image.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+body p {
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+}
 
 button {
     background-color: rgb(107, 107, 207);
@@ -47,19 +57,19 @@ button {
     margin-left: 38%;
     outline: none;
     font-size: 20px;
-    border: 0px;
+    border: 0;
     cursor: pointer;
 }
 
 button:active {
     transform: translateY(3px);
+    border-radius: 20px;
 }
 
 button:hover {
     opacity: 0.7;
     border: 0px;
     color: white;
-    
 }
 
 .errorMessage {
@@ -73,9 +83,8 @@ button:hover {
 }
 
 footer {
-    
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive;
     color: rgb(45, 49, 45);
     background-color: white;
     position: fixed;
@@ -86,44 +95,26 @@ footer {
     padding-top: 20px;
 }
 
-.forget-password button{
+.forget-password button {
     margin-left: 5%;
     width: 15%;
 }
 
-.forget-password form{
-    
+.forget-password form {
     margin-left: 5%;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.forget-password input{
-    width:30%;
+.forget-password input {
+    width: 30%;
 }
 
 form {
     margin-left: 20%;
 }
 
-.get-user {
-    height: 528px;
-    width: 101.2%;
-    padding: 40px;
-    background:  url('site_image.png')  no-repeat 0 -300px;
-    background-size: cover;
-    position: relative;
-    right: 0.5em;  
-     
-}
-
-.get-user p{
-    color: white;
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.get-started { 
+.get-started {
     background-color: rgb(107, 107, 207);
     color: white;
     border-radius: 20px;
@@ -135,26 +126,39 @@ form {
     border: 0px;
 }
 
-
-
 .get-started:hover {
     background-color: rgb(77, 60, 19);
     color: white;
     border: 0px;
-    
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    
+
 }
 
+.hamburger {
+    display: none;
+}
+
+.index-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 90%;
+    margin: 9% 0 0 5%;
+    padding: 60px 20px;
+    border-radius: 7px;
+    min-height: 65vh;
+}
 
 .index-heading {
-    line-height: 1px; 
+    line-height: 1px;
     margin-left: 30%;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-join {
+    margin-left: 50%;
 }
 
 input {
@@ -165,30 +169,32 @@ input {
     padding-left: 5px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
+    border-radius: 7px;
 }
 
+input:focus {
+    box-shadow: 1px 0px 6px 2px rgb(116, 116, 199);
+}
 
 .nav-items {
-    float: right;
+
     font-family: cursive;
     font-size: 20px;
     list-style-type: none;
-    margin-right: 2%;
+
+    position: relative;
+
     background-color: rgb(22, 12, 3);
     opacity: 0.5;
     height: 40px;
-    padding: 4px 10px 4px 10px;
     color: white;
-    
+
 }
 
 .nav-items:hover {
     cursor: pointer;
     opacity: 0.3;
 }
-
-
-
 
 .nav-items ul li {
     list-style-type: none;
@@ -203,7 +209,7 @@ input {
     text-align: center;
 }
 
-.offer form button{
+.offer form button {
     width: 40%;
     margin-left: 5%;
 }
@@ -211,7 +217,7 @@ input {
 
 
 .offer-description {
-    line-height: 1px; 
+    line-height: 1px;
     margin-left: 23%;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -257,14 +263,21 @@ p {
     font-size: 18px;
     text-align: center;
     width: 100%;
-    
+
 }
 
 .ride-btn2 {
     font-size: 18px;
     text-align: center;
     width: 13%;
-    
+
+}
+
+.right-pointing-arrow {
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    left: 50px;
 }
 
 select {
@@ -279,7 +292,7 @@ select {
 }
 
 .signin {
-    font-size: 15px;  
+    font-size: 15px;
 }
 
 .signin-center {
@@ -292,8 +305,7 @@ select {
     width: 64%;
     outline: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 15px;  
 }
 
 .signin-box {
@@ -301,34 +313,30 @@ select {
     padding: 20px;
     width: 50%;
     margin: 1.5% 0% 0% 25%;
-
+    border-radius: 7px;
 }
 
-.signin-heading p{
-    line-height: 1px; 
+.signin-heading p {
+    line-height: 1px;
     margin-left: 13%;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    
+
 }
 
 .signup-heading {
-    line-height: 1px; 
+    line-height: 1px;
     margin-left: 27%;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.signin-properties {
-    margin-left: 30%;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
 .signin-properties p {
     font-size: 18px;
-    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .signin-properties a {
@@ -338,7 +346,11 @@ select {
 
 .signin-properties a:hover {
     text-decoration: underline;
-    
+
+}
+
+.site-name {
+    font-size: 24px;
 }
 
 .specific-ride-btn {
@@ -351,12 +363,46 @@ select {
     color: whitesmoke;
 }
 
-.specific-ride-form form{
-    margin-left: 70%;  
+.specific-ride-form form {
+    margin-left: 70%;
 }
 
 .specific-ride-form button {
     width: 40%;
+}
+
+.tab-name {
+    padding-left: 2%;
+}
+
+.tab-signin {
+    margin-left: 82%;
+    font-size: 14px;
+    transition: 1s;
+}
+
+.tab-signin-index {
+    font-size: 14px;
+    color: rgb(45, 49, 45);
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    padding: 7px 0 20px 7px;
+}
+
+.tab-signin-index button{
+    margin-left: 3%;
+}
+
+.tab-signin:hover {
+    font-size: 18px;
+}
+
+.tab-modal {
+    display: none;
 }
 
 table {
@@ -381,38 +427,44 @@ td {
     display: none;
 }
 
-
 /*responsive design */
 
-@media only screen and (max-width: 950px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
-
-    .forget-password button{
+    .forget-password button {
         margin-left: 5%;
         width: 30%;
     }
-    
-    .forget-password input{
-        width:60%;
+
+    .forget-password input {
+        width: 60%;
+    }
+
+    .index-box {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 90%;
+        margin: 17% 0 0 5%;
+        border-radius: 7px;
+        min-height: 75vh;
     }
 
     .index-heading {
         margin-left: 10%;
         font-size: 30px;
-    } 
+    }
 
     .offer-description {
         margin-left: 23%;
         font-size: 20px;
     }
-    
+
 
     .signup-heading {
         font-size: 20px;
     }
 }
 
-@media only screen and (max-width: 750px) {
+@media (min-width: 480px) and (max-width: 768px) {
 
     .offer form {
         padding: 10px;
@@ -421,13 +473,13 @@ td {
         text-align: center;
     }
 
-    .offer form button{
+    .offer form button {
         width: 50%;
         margin-left: 5%;
     }
-    
-    .offer form input{
-        width: 90%; 
+
+    .offer form input {
+        width: 90%;
     }
 
     .signup {
@@ -438,8 +490,8 @@ td {
         width: 50%;
     }
 
-    .specific-ride-form form{
-        margin-left: 10%;  
+    .specific-ride-form form {
+        margin-left: 10%;
     }
 
     .index-heading {
@@ -455,77 +507,112 @@ td {
     table {
         margin-left: 20%;
     }
-            
+
 }
+/*SmartPhones*/
+@media (min-width: 320px) and (max-width: 480px) {
 
-@media only screen and (max-width: 500px) {
-
-    .available-ride-1-3,.available-ride-2 {
-        font-size: 15px;
+    body p {
+        font-size: 25px;
     }
 
-    .forget-password button{
-        margin-left: 5%;
-        width: 50%;
-    }
-    
-    .forget-password input{
-        width:80%;
-    }
-    
-    
-    form {
+    .get-started {
+        height: 40px;
+        width: 80%;
         margin-left: 10%;
-    }
-
-    form input,select {
-        width: 90%;
-    }
-
-    img {
-        height: 300px;
-        width: 100%;
-    }
-
-    .index-heading,p {
-        margin-left: 5%;
         font-size: 15px;
     }
 
-    .signup-heading,.signin-heading {
-        font-size: 15px;
-        margin-left: 5%;
+    .get-user {
+        background: url('../images/site_image.png') no-repeat -250px 0px;
+        background-size: cover;
+        background-attachment: fixed;
     }
 
-    table {
-        margin-left: 15%;
-    }
-    
-}
-
-@media only screen and (max-width: 350px) {
-
-    .index-heading {
-        font-size: 14px;
-        margin-left: 3%;
+    .get-user p {
+        font-size: 25px;
     }
 
-    img {
-        height: 200px;
-        width: 100%;
+    .hamburger {
+        display: inline;
+        position: sticky;
+        left: 88%;
+        padding: 0;
+        background-color: purple;
     }
     
+    .index-box {
+        margin: 30% 0 0 5%;
+        padding: 30px 20px;
+    }
+
+    .index-offer, .index-join, .index-login {
+        display: none;
+    }
+
     .offer-description {
         margin-left: 5%;
     }
-    
+
+    .signin-box {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 1px 1px 4px 1px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .signin-heading p {
+
+        font-size: 18px;
+        font-weight: bold;
+        text-align: start;
+    }
+
+    .signin-properties p {
+        font-size: 20px;
+        margin-left: 3%;
+    }
+
+    .signup {
+        width: 65%;
+    }
+
+    .tab-signin {
+        display: none;
+    }
+
+    .tab-modal {
+        background-color: rgba(93, 81, 134, 0.95);
+        position: fixed;
+        top: 2.7em;
+        left: 0;
+        height: 40%;
+        width: 100%;
+    }
+
+    .tab-modal2 {
+        top: 4.65em;
+    }
+
+
+    .tab-modal-link {
+        margin-top: 10%;
+        padding-top: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    .tab-modal-link a {
+        color:rgb(252, 227, 6);
+        font-size: 20px;
+        transition: 1s;
+    }
+
+    .tab-modal-link a:hover {
+        font-size: 25px;
+        color: white;
+        background-color: palevioletred;
+        padding: 7px;
+    }
+
 }
-
-
-
-
-
-
-
-
-
