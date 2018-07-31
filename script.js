@@ -1,41 +1,21 @@
 
-//shows users profile
-function showProfile() {
-    var profileBtn = document.querySelector('.view-profile');
+//Toggle navbar
+function showNavbar(value) {
+    var navBtn = document.querySelector(value);
     /**
     * Create a toggle
     */
-    if (profileBtn.style.display === "block") {
-        profileBtn.style.display = "none";
+    if (navBtn.style.display === "inline") {
+        navBtn.style.display = "none";
     } else {
-        profileBtn.style.display = "block";
+        navBtn.style.display = "inline";
     }
 
-}
-
-//view request a user created
-function showRequests() {
-    var requestBtn = document.querySelector('.view-requests');
-    /**
-     * Create a toggle
-     */
-    if (requestBtn.style.display === "block") {
-        requestBtn.style.display = "none";
-    } else {
-        requestBtn.style.display = "block";
-    }
 }
 
 //re-directs the user to the specified location
 function showLocation(link) {
     return location.href = link;
-}
-
-//sends user back to his/her profile page
-function backToProfile() {
-    var backToProfile = setTimeout(function () {
-        return location.href = 'profile.html';
-    }, 13000);
 }
 
 // Empty Email
