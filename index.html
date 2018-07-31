@@ -7,7 +7,7 @@
     </title>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
 </head>
 
@@ -16,38 +16,51 @@
     <header>
         <nav>
             <h1>
-                <a href="index.html">RideMyWay</a>
-                
-                    <div class="nav-items" onclick="showLocation('signin.html')">Offer a ride</div>
-                    <div class="nav-items" onclick="showLocation('signin.html')">Join a ride </div>  
-                    <div class="nav-items" onclick="showLocation('signin.html')">Sign in </div> 
-                 
+                <div class="tab-signin-index">
+                    <a href="index.html" class="site-name">RideMyWay</a>
+                    <a href="signup.html" class="index-join">Join a ride</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="signup.html" class="index-offer">Offer a ride</a>
+                    <button class="index-login" onclick="showLocation('signin.html')">LOGIN</button>
+                    <button class="hamburger" onclick="showNavbar('.tab-modal')">&#9776;</button>
+                    <div href="signin.html" class="tab-modal tab-modal2">
+                        <div class="tab-modal-link">
+                            <span class="right-pointing-arrow">&#10095;</span>
+                            <a href="signup.html">Sign in</a>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <span class="right-pointing-arrow">&#10095;</span>
+                            <a href="signup.html">Offer a ride</a>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <span class="right-pointing-arrow">&#10095;</span>
+                            <a href="signup.html">Join a ride</a>
+                            <br/>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+
             </h1>
         </nav>
 
     </header>
 
-    <div class="get-user">
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+    <div class="index-box">
         <p>
-            <strong>RideMyWay makes offering ride and joining a ride offer easy ...</strong>
+            <strong>A carpooling application that makes offering ride and joining a ride offer easy</strong>
         </p>
         <button class="get-started" onclick="showLocation('signup.html')">
-            <strong>Get Started</strong>
+            Get Started
         </button>
     </div>
-
-
 
     <footer>
         <strong>&copy; 2018 RideMyWay.</strong>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="./script/script.js"></script>
 
 </body>
 
