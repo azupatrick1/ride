@@ -606,8 +606,8 @@ td {
 
     .hamburger {
         display: inline;
-        position: sticky;
-        left: 88%;
+        position: absolute;
+        left: 84%;
         padding: 0;
         background-color: purple;
     }
