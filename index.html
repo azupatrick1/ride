@@ -6,8 +6,9 @@
         RideMyWay | A carpooling application
     </title>
     <meta charset='utf-8' />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 
 </head>
 
@@ -17,7 +18,9 @@
         <nav>
             <h1>
                 <div class="tab-signin-index">
-                    <a href="index.html" class="site-name">RideMyWay</a>
+                    <a href="index.html" class="site-name">
+                        Ride<span class="site-name-design">MyWay</span>
+                    </a>
                     <a href="signup.html" class="index-join">Join a ride</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="signup.html" class="index-offer">Offer a ride</a>
                     <button class="index-login" onclick="showLocation('signin.html')">LOGIN</button>
@@ -47,12 +50,43 @@
 
     </header>
 
-    <div class="index-box">
+    <div class="slide0">
         <p>
-            <strong>A carpooling application that makes offering ride and joining a ride offer easy</strong>
+            <strong>A carpooling application that
+                <br/> makes offering a ride and
+                <br/> joining a ride offer easy</strong>
         </p>
+        <br/>
+        <br/>
         <button class="get-started" onclick="showLocation('signup.html')">
             Get Started
+        </button>
+        <button class="scroll-down-btn" onclick="scrollMe()">&#709</button>
+    </div>
+
+    <div class="slide1">
+        <p>
+            <strong>Embarking on a journey? Travelling alone can be boring.</strong>
+            <br/> <span class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at sem et ligula fermentum blandit. Orci varius
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tempus eu enim eleifend vulputate.
+            Aliquam sit amet turpis nec enim imperdiet luctus semper ac erat.</span>
+        </p>
+        <br/>
+        <button class="get-started" onclick="showLocation('offer.html')">
+            Offer a ride
+        </button>
+    </div>
+
+    <div class="slide2">
+        <p>
+            <strong>Travelling is fun. Do it with other people.</strong>
+            <br/> <span class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras at sem et ligula fermentum blandit. Orci varius
+            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In tempus eu enim eleifend vulputate.
+            Aliquam sit amet turpis nec enim imperdiet luctus semper ac erat.</span>
+        </p>
+        <br/>
+        <button class="get-started" onclick="showLocation('offer.html')">
+            Join a ride
         </button>
     </div>
 
