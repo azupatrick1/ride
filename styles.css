@@ -4,12 +4,12 @@
 
 a {
     text-decoration: none;
-    color: rgb(45, 49, 45);
+    color: rgb(196, 41, 41);
     font-family: cursive;
 }
 
 a:hover {
-    color: rgb(196, 41, 41);
+    color: rgb(196, 41, 41, 0.7);
     cursor: pointer;
 }
 
@@ -85,7 +85,7 @@ button:hover {
 footer {
     text-align: center;
     font-family: cursive;
-    color: rgb(45, 49, 45);
+    color: rgb(196, 41, 41);
     background-color: white;
     position: absolute;
     left: 0;
@@ -375,6 +375,10 @@ select {
     color: blueviolet;
 }
 
+.site-name-design:hover {
+    color: rgba(138, 43, 226, 0.7) 
+}
+
 .slide0 {
     background-color:rgba(0,0,255,0.2); 
     height: 90vh; 
@@ -621,6 +625,10 @@ td {
         margin-left: 5%;
     }
 
+    .scroll-down-btn {
+        display: none;
+    }
+
     .signin-box {
         background-color: rgba(0, 0, 0, 0.5);
         padding: 1px 1px 4px 1px;
@@ -644,6 +652,15 @@ td {
         width: 65%;
     }
 
+        
+    .slide0 p { 
+        padding-top: 42%;
+    }
+
+    .slide0, .slide1, .slide2 {
+        height: 70vh;
+    }
+
     .tab-signin {
         display: none;
     }
@@ -651,28 +668,27 @@ td {
     .tab-modal {
         background-color: rgba(93, 81, 134, 0.95);
         position: fixed;
-        top: 2.7em;
+        top: 4em;
         left: 0;
-        height: 50%;
+        height: 50vh;
         width: 100%;
     }
 
-    .tab-modal2 {
+    /*.tab-modal2 {
         top: 4.65em;
-    }
-
+    }*/
 
     .tab-modal-link {
         margin-top: 10%;
         padding-top: 15px;
-        font-family: Arial, Helvetica, sans-serif;
         text-align: center;
     }
 
     .tab-modal-link a {
         color:rgb(252, 227, 6);
         font-size: 20px;
-        transition: 1s;
+        transition: 1s;   
+        font-family: 'Ubuntu Condensed', sans-serif;
     }
 
     .tab-modal-link a:hover {
@@ -680,6 +696,10 @@ td {
         color: white;
         background-color: palevioletred;
         padding: 7px;
+    }
+
+    .text-small {
+        font-size: 15px;
     }
 
 }
