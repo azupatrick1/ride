@@ -17,6 +17,13 @@ function showNavbar(value) {
 function showLocation(link) {
     return location.href = link;
 }
+// Scroll down
+function scrollMe() {
+    window.scrollTo({ 
+        top: 600,
+        behavior: "smooth"
+    });
+}
 
 // Empty Email
 function validateEmailInput() {
