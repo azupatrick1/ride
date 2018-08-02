@@ -68,7 +68,7 @@ button:active {
 
 button:hover {
     opacity: 0.7;
-    border: 0px;
+    border: 0;
     color: white;
 }
 
@@ -87,10 +87,9 @@ footer {
     font-family: cursive;
     color: rgb(45, 49, 45);
     background-color: white;
-    position: fixed;
+    position: absolute;
     left: 0;
-    bottom: 0;
-    height: 60px;
+    height: 10vh;
     width: 100%;
     padding-top: 20px;
 }
@@ -120,15 +119,9 @@ form {
     border-radius: 20px;
     width: 20%;
     height: 45px;
-    margin-left: 38%;
+    margin-left: 8%;
     outline: none;
     font-size: 20px;
-    border: 0px;
-}
-
-.get-started:hover {
-    background-color: rgb(77, 60, 19);
-    color: white;
     border: 0px;
 }
 
@@ -151,9 +144,8 @@ h1 {
 }
 
 .index-box p {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Ubuntu Condensed', sans-serif;
 }
-ss
 
 .index-heading {
     line-height: 1px;
@@ -164,6 +156,11 @@ ss
 
 .index-join {
     margin-left: 50%;
+    font-size: 16px;
+}
+
+.index-offer {
+    font-size: 16px;
 }
 
 input {
@@ -285,6 +282,22 @@ p {
     left: 50px;
 }
 
+.scroll-down-btn {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    width: 6%;
+    min-height: 10vh;
+    border-radius: 100%;
+    opacity: 0.9;
+    margin: 8% 0 0 92%;
+}
+
+.scroll-down-btn:hover {
+    color: black;
+}
+
 select {
     height: 45px;
     width: 57%;
@@ -358,6 +371,50 @@ select {
     font-size: 24px;
 }
 
+.site-name-design {
+    color: blueviolet;
+}
+
+.slide0 {
+    background-color:rgba(0,0,255,0.2); 
+    height: 90vh; 
+    width: 100%; 
+}
+
+.slide0 p { 
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 12% 0 0 8%; 
+    margin: 0;
+}
+
+.slide1 {
+    /*background-color:rgba(112, 112, 114, 0.2); */
+    background-color: white;
+    height: 90vh; 
+    width: 100%; 
+}
+
+.slide1 p { 
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 8% 0 0 8%;
+    color:black; 
+    margin: 0;
+}
+
+.slide2 {
+    /*background-color:rgba(0,0,255,0.2);*/ 
+    background-color: rgba(255,255,255,0.9);
+    height: 90vh; 
+    width: 100%; 
+}
+
+.slide2 p { 
+    font-family: 'Ubuntu Condensed', sans-serif;
+    padding: 12% 0 0 8%;  
+    margin: 0; 
+    color:black; 
+}
+
 .specific-ride-btn {
     float: right;
     font-size: 20px;
@@ -393,9 +450,10 @@ select {
     position: fixed;
     left: 0;
     top: 0;
-    height: 60px;
+    height: 10vh;
     width: 100%;
     padding: 7px 0 20px 7px;
+    box-shadow: 1px 0px 6px 2px rgb(116, 116, 199);
 }
 
 .tab-signin-index button{
@@ -416,6 +474,10 @@ table {
 
 td {
     border: 0.5px solid rgb(214, 126, 126);
+}
+
+.text-small {
+    font-size: 25px;
 }
 
 .view-profile {
@@ -529,7 +591,7 @@ td {
     }
 
     .get-user {
-        background: url('site_image.png') no-repeat -250px 0px;
+        background: url('../images/site_image.png') no-repeat -250px 0px;
         background-size: cover;
         background-attachment: fixed;
     }
@@ -541,7 +603,6 @@ td {
     .hamburger {
         display: inline;
         position: sticky;
-        z-index: 1;
         left: 88%;
         padding: 0;
         background-color: purple;
@@ -592,7 +653,7 @@ td {
         position: fixed;
         top: 2.7em;
         left: 0;
-        height: 40%;
+        height: 50%;
         width: 100%;
     }
 
